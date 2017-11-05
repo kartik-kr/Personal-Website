@@ -1,0 +1,7 @@
+{% extends 'home/base_template.html' %}
+{% block body %}
+<a href = "{% url 'index'%}">
+<button style = "background: url(../static/home/images/error.jpg) no-repeat center; height: 500px; width: 100%;border: none " onclick="{% url 'index'%}">
+</button>
+</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'home/base_template.html' %}
+{% block body %}
+<a href = "{% url 'index'%}">
+<button style = "background: url(../static/home/images/AI.jpg) no-repeat center; height: 500px; width: 100%;border: none " onclick="{% url 'index'%}">
+        <div class="banner-info">
+                <div class="col-md-12 header-right" style="text-align: center;">
+                        <h1>Thanks for sending me a response You can expect a mail very soon!</h1>
+                </div>
+        </div>
+</button>
+</a>
+{% endblock %}

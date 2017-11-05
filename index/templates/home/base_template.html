@@ -1,0 +1,87 @@
+<!--
+Author: kartik K R
+-->
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="author" content="Kartik K R" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Personal page -- Kartik K R " />
+<meta name="keywords" content="KR, Kartik, KRK, kartik-kr,Personal, Resume, CV" /><title>I'm Kartik K R</title>
+<link rel="icon" type="image" href="{% static 'home/images/about-pic11.jpg' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="{% static 'home/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'home/js/jquery.min.js' %}"></script>
+<!-- Custom Theme files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="{% static '/home/css/style.css' %}" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="{% static 'home/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'home/js/easing.js' %}"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+$(".scroll").click(function(event){
+event.preventDefault();
+$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+});
+});
+</script>
+<!---- start-smoth-scrolling---->
+</head>
+<body>
+<!-- container -->
+<!-- header -->
+<div id="hometemp" class="header">
+<div class="container">
+<!-- top-hedader -->
+<div class="top-header">
+<!-- /logo -->
+<!--top-nav---->
+      <div class="top-nav">
+            <div class="navigation">
+                    <div class="logo">
+                            <h1><a href="{%url 'index'%}"><span>K</span>ARTIK       <span>K R</span></a></h1>
+                    </div>
+                    <div class="navigation-right">
+                            <span class="menu"><img src="{% static 'home/images/menu.png' %}" alt=" " /></span>
+                            <nav class="link-effect-3" id="link-effect-3">
+                                    <ul class="nav1 nav nav-wil">
+                                           <li ><a data-hover="Home" href="{%url 'index'%}">Home</a></li>
+                                           <li><a  data-hover="About" href="{%url 'index'%}#about">About</a></li>
+                                           <li><a  data-hover="Interests" href="{%url 'index'%}#Interests" >Interests</a></li>
+                                           <li><a  data-hover="Experience" href="{%url 'index'%}#work">Experience</a></li>
+                                           <li><a data-hover="Resume" href="https://drive.google.com/file/d/0B50AWvj9KLlZN2haQVlRRmJiSFE/view?usp=sharing" target="_blank">Resume</a></li>
+                                           <li><a  data-hover="Blog" href="{%url 'index'%}#blogs">Blog</a></li>
+                                           <li><a  data-hover="Contact" href="{%url 'index'%}#contact">Contact</a></li>
+                                    </ul>
+                            </nav>
+                    <!-- script-for-menu -->
+                            <script>
+                               $( "span.menu" ).click(function() {
+                                     $( "ul.nav1" ).slideToggle( 300, function() {
+                                     // Animation complete.
+                                      });
+                                     });
+                            </script>
+                    <!-- /script-for-menu -->
+                    </div>
+                    <div class="clearfix"></div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /top-header -->
+{% block body %}
+{% endblock %}
+</head>
