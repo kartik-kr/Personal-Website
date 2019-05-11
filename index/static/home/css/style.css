@@ -120,8 +120,7 @@ ul.address {
     padding: 0;
 }
 .header-left img {
-    width: 100%;
-     margin-top: 150px;
+    width: 256px;	
 }
 .header-right {
     padding-left: 3em;
