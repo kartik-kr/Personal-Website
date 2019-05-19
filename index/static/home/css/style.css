@@ -563,7 +563,7 @@ span.border.one:after {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-      border-radius: 50%;
+      border-radius: 100%;
 }
 .hvr-rectangle-in:hover, .hvr-rectangle-in:focus, .hvr-rectangle-in:active {
   color: white;
@@ -586,7 +586,7 @@ span.border.one:after {
 .timeline-badgecentral {
   background-color: #ffffff !important;
   width: 70px;
-  border-radius: 55%;
+  border-radius: 80%;
 }
 
 #work {
